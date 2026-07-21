@@ -1,6 +1,6 @@
 # PIAM: Plataforma Interactiva de Aprendizaje Matemático
 
-> **PIAM** es una solución web moderna diseñada para transformar la enseñanza de las matemáticas, llevando el legado del *Álgebra de Baldor* a un entorno digital interactivo. Con un enfoque estrictamente **mobile-first**, la plataforma busca optimizar el aprendizaje para el 88.9% de los usuarios que utilizan smartphones como herramienta principal.
+> **PIAM** es una solución web moderna diseñada para transformar la enseñanza de las matemáticas, llevando el legado del *Álgebra de Baldor* a un entorno digital interactivo (un módulo que contendrá un par de capítulos). Con un enfoque estrictamente **mobile-first**, la plataforma busca optimizar el aprendizaje para el 88.9% de los usuarios que utilizan smartphones como herramienta principal luego de las encuestas de recopilación de información.
 
 ![Estado](https://img.shields.io/badge/Estado-Desarrollo-success?style=flat-square)
 ![Laravel](https://img.shields.io/badge/Laravel-11-FF2D20?style=flat-square&logo=laravel&logoColor=white)
@@ -40,7 +40,7 @@ Sigue estos pasos para replicar el entorno de desarrollo actual:
 
 ### 1. Clonar el repositorio y configurar variables
 ```bash
-git clone <URL_DEL_REPOSITO>
+git clone https://github.com/Khrisstopher/piam.git
 cd piam
 cp .env.example .env
 
@@ -60,16 +60,13 @@ php artisan migrate
 composer install
 php artisan key:generate
 php artisan migrate
----
 
 ```
 ## Terminal Backend
 ```bash
 npm install --force
----
 
 ```
 ## Terminal Frontend(Compilador Vite)
 ```bash
 npm run dev
----
